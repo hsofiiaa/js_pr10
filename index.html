@@ -17,6 +17,17 @@
       <span>Unchecked count: <span id="unchecked-count">0</span></span>
     </div>
     <button class="btn btn-primary mb-3" onClick="newTodo()">New TODO</button>
+    <div id="loading" class="alert alert-info text-center" style="display: none;">
+      <div class="spinner-border text-primary me-2" role="status">
+        <span class="visually-hidden">Завантаження...</span>
+      </div>
+      Завантаження...
+    </div>
+
+    <div id="error-message" class="alert alert-danger" style="display: none;">
+      <strong>Помилка!</strong> <span id="error-text"></span>
+      <button type="button" class="btn-close float-end" onclick="hideError()"></button>
+    </div>
     <ul id="todo-list" class="list-group">
       
     </ul>    
